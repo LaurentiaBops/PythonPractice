@@ -1,0 +1,5 @@
+Fruits = ["apple", "banna", "cherry"]
+
+for fruit in Fruits:
+    print(fruit)
+

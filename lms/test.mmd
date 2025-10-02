@@ -1,0 +1,22 @@
+classDiagram
+    class User
+    <<interface>> User
+        User: + name
+        User: + borrowed_books
+        User: + get_user_info()
+        User: + borrow_book(book Book)
+        User: + return_book(book Book)
+
+    class Member
+        Member: + name
+        Member: + burrowed_books
+        Member: + burrow_book(book Book)
+        Member: + return_book(book Book)
+
+    class Librarian
+        Librarian: + name
+        Librarian: + get_user_info()
+
+
+    Member ..> User
+    Librarian ..> User
