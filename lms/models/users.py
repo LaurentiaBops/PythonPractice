@@ -35,3 +35,10 @@ class Librarian(User):
 
     def get_user_info(self) -> str:
         return f"Librarian: {self.name}"
+
+    def borrow_book(self, book: Book) -> None:
+        pass
+    
+
+    def return_book(self, book: Book) -> None:
+        pass
